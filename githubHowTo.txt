@@ -1,0 +1,17 @@
+Got to GitHub tile:
+search for Flyway in the Mediware repo 
+    (search image)
+-Once here you can create branches, pull req, add/edit script, and review code
+    (table) create branches / Pull req / add/edit / review
+
+
+    Create Branch
+            -Starting in Flyway(main/master)
+        -Navigate to 'Branch' dropdown
+        -In the search field type the name of the branch
+            -standard naming is SA-01012023(date not seperated)
+        -select the option 'Create branch: (name)'
+    
+    Create Pull Request
+            -Starting from Flyway(main/master)
+            
