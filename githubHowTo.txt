@@ -1,3 +1,16 @@
+This article lays out the workflow for the tier 2 team when using gitHub. This artcile acts as a basics of git for tier 2 deplyment.
+The tier 2 team uses Github to sumit our scripts and view and code we need for a case. The access is via an Okta tile.
+Tier 2 at this time works with the Flyway repo for scrip deplyment.
+Prerequises:
+-Access to Github with all revelant permissions (link to It access)
+-On call DBA (teams link)
+-Azure Access
+
+External Documentation: 
+GitHub : https://docs.github.com/en
+Azure : https://learn.microsoft.com/en-us/azure/devops/?view=azure-devops
+SQL server : https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16
+
 Got to GitHub tile:
 search for Flyway in the Mediware repo 
     (search image)
@@ -12,6 +25,18 @@ search for Flyway in the Mediware repo
             -standard naming is SA-01012023(date not seperated)
         -select the option 'Create branch: (name)'
     
+    Delete / Close Branch
+
     Create Pull Request
             -Starting from Flyway(main/master)
-            
+        -You have two options:
+            -Thru the 'Commits ahead' link
+            -Thru Pull requests table
+        -Thru the Pull Request tab:
+            -Select the Pull Request tab to the left of Issues
+            -Use the 'New pull request' button
+            -Select 'Base:Main' and then your branch as 'Compare:(yourbranch)' then the 'Create Pull request' button.
+                (img)
+            -Re-name the Pull Requet to SA-(date).0
+                -.0 indicates 1st run
+            -On the right select the on all DBA for that delay
