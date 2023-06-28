@@ -1,6 +1,8 @@
-This article lays out the workflow for the tier 2 team when using gitHub. This artcile acts as a basics of git for tier 2 deplyment.
+This article lays out the workflow for the tier 2 team when using gitHub and azure for deyployment. This artcile acts as a basics of git for tier 2 deplyment.
 The tier 2 team uses Github to sumit our scripts and view and code we need for a case. The access is via an Okta tile.
 Tier 2 at this time works with the Flyway repo for scrip deplyment.
+
+
 Prerequises:
 -Access to Github with all revelant permissions (link to It access)
 -On call DBA (teams link)
@@ -11,12 +13,16 @@ GitHub : https://docs.github.com/en
 Azure : https://learn.microsoft.com/en-us/azure/devops/?view=azure-devops
 SQL server : https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16
 
-Got to GitHub tile:
+
+The Deployment process is: //(add expalining link to bottom of page)
+    -Create Branch > Create PR > Check Azure build
+        -If successful Job completed
+        -Else close branch and recreate, updating the verison till run is succesful
+
 search for Flyway in the Mediware repo 
     (search image)
 -Once here you can create branches, pull req, add/edit script, and review code
     (table) create branches / Pull req / add/edit / review
-
 
     Create Branch
             -Starting in Flyway(main/master)
@@ -26,6 +32,11 @@ search for Flyway in the Mediware repo
         -select the option 'Create branch: (name)'
     
     Delete / Close Branch
+            -Starting in Flyway(main/master)
+        -Navigate to 'Branch' dropdown
+            -select 'view all branches'
+        -Locate the desired branch and click the transh icon.
+            (img)
 
     Create Pull Request
             -Starting from Flyway(main/master)
@@ -39,4 +50,13 @@ search for Flyway in the Mediware repo
                 (img)
             -Re-name the Pull Requet to SA-(date).0
                 -.0 indicates 1st run
-            -On the right select the on all DBA for that delay
+            -On the right, select the on call DBA for that day
+            -Create Pull Request
+    
+    Delete/Close Pull Request
+            -starting from Flyway(main/master)
+        -Select the Pull Request tab to the left of Issues
+        -Select desired Pull Request
+        -Use 'Close pull Request' button
+
+Azure pipleline
