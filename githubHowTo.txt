@@ -19,6 +19,12 @@ The Deployment process is: //(add expalining link to bottom of page)
         -If successful Job completed
         -Else close branch and recreate, updating the verison till run is succesful
 
+As of 06/28/2023 the guidelines are:
+-create a branch only after previous was merged
+-one branch for all of T2 and PS 
+-Azure runs at 1 and fixes need to be applied by then for deployment after hours same day
+
+
 search for Flyway in the Mediware repo 
     (search image)
 -Once here you can create branches, pull req, add/edit script, and review code
@@ -60,3 +66,10 @@ search for Flyway in the Mediware repo
         -Use 'Close pull Request' button
 
 Azure pipleline
+Use link provided by Lando
+-Locate pipeline section
+-Find HHH.Flyway and find the run name that correlates with your Pull Request name
+    -If completed the left of the two bubbles with be green
+-Click into the left bubble and navigate to the BASH section
+-Once in here investigate the error logs and find the issue
+-Once issue resoled recreate the PR to re-run the pipline and repeat till succesful.
