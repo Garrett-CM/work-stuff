@@ -66,6 +66,8 @@ search for Flyway in the Mediware repo
         -Use 'Close pull Request' button
 
 Azure pipleline
+This runs officaly at 1pm CST
+    -If he run does not build succesfuly the deplyment will have Issues and will be pushed to the next days release.
 Use link provided by Lando
 -Locate pipeline section
 -Find HHH.Flyway and find the run name that correlates with your Pull Request name
