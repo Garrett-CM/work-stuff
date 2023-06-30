@@ -73,3 +73,5 @@ Use link provided by Lando
 -Click into the left bubble and navigate to the BASH section
 -Once in here investigate the error logs and find the issue
 -Once issue resoled recreate the PR to re-run the pipline and repeat till succesful.
+
+-At this time the process is still undecided and these steps are subject to change
