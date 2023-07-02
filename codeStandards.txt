@@ -1,2 +1,5 @@
 SQL code must follow a specified structure for Flyway to pick up and run without errors. This process is currently done by Garrett M. but standards will be added so any persons on the tier 2 team can complete the review as best as possible.
 
+For flyway to work as intinded the following cannot appear in the script:
+-use statments
+-comments
