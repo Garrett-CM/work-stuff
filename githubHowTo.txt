@@ -66,15 +66,17 @@ search for Flyway in the Mediware repo
         -Use 'Close pull Request' button
 
 Azure pipleline
-This runs officaly at 1pm CST
-    -If he run does not build succesfuly the deplyment will have Issues and will be pushed to the next days release.
-Use link provided by Lando
+This runs officaly at 6pm every day
+    -Fridays are included but best practice to not deploy on Fridays
+    -If run does not build succesfuly by 6PM the deplyment will be pushed to the next days release.
+
+Actions on the repo trigger the azure pipeline
+    -Use link provided by Lando
 -Locate pipeline section
 -Find HHH.Flyway and find the run name that correlates with your Pull Request name
     -If completed the left of the two bubbles with be green
 -Click into the left bubble and navigate to the BASH section
--Once in here investigate the error logs and find the issue
+    -Once in here investigate the error logs and find the issue
 -Once issue resoled recreate the PR to re-run the pipline and repeat till succesful.
 
--At this time the process is still undecided and these steps are subject to change
--
+-migration percistance is something we need to test
